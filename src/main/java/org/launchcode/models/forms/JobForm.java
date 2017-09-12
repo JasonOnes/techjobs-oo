@@ -19,14 +19,15 @@ public class JobForm {
     @Size(min=1, message = "Name may not be empty")
     private String name;
 
-    @NotNull
+
     private int employerId;
 
     /*
         TODO #3 - Included other fields needed to create a job,
         with correct validation attributes and display names.
         Don't forget to add getters and setters
-     */
+     */ //note DONE
+
     @NotNull
     private ArrayList<Employer> employers;
 
@@ -46,7 +47,7 @@ public class JobForm {
 
         /*
             TODO #4 - populate the other ArrayList collections needed in the view
-        */
+        */ //note DONE
 
         employers = jobData.getEmployers().findAll();
         locations = jobData.getLocations().findAll();
